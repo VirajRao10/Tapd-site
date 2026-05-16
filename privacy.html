@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy policy for Tapd, an Apple Watch controller for Anki Desktop.">
+    <meta name="description" content="Privacy policy for Tapd, an iPhone and Apple Watch controller for Anki Desktop.">
     <title>Tapd Privacy Policy</title>
     <link rel="icon" href="./assets/tapd-icon.png">
     <link rel="stylesheet" href="./styles.css">
@@ -26,7 +26,7 @@
         <p class="eyebrow">Effective May 15, 2026</p>
         <h1>Privacy Policy</h1>
         <p class="lede">
-          Tapd is designed to work locally between your Apple Watch and the Tapd Anki add-on running on your computer.
+          Tapd is designed to work locally between your iPhone, Apple Watch, and the Tapd Anki add-on running on your computer.
         </p>
       </section>
 
@@ -39,10 +39,19 @@
 
         <h2>Data Stored on Your Devices</h2>
         <p>
-          The Apple Watch app stores the computer IP address, port, selected controller mode, device name, and pairing
-          token so the app can reconnect to your Anki add-on. The pairing token is stored in the Apple Watch Keychain.
+          The iPhone app stores the computer IP address, port, and Watch device name so it can send setup details to
+          your Apple Watch. The Apple Watch app stores the computer IP address, port, selected controller mode, device
+          name, and pairing token so the app can reconnect to your Anki add-on. The pairing token is stored in the
+          Apple Watch Keychain.
           The Anki add-on stores its local bridge settings, current pairing code, paired device name, and pairing token
           in Anki's add-on configuration on your computer.
+        </p>
+
+        <h2>iPhone to Watch Sync</h2>
+        <p>
+          When you tap Send to Watch, Tapd sends the IP address, port, pairing code, and device name from the iPhone app
+          to the Watch app using Apple's WatchConnectivity framework. This setup message is used to complete local
+          pairing and is not sent to Tapd servers.
         </p>
 
         <h2>Local Network Communication</h2>

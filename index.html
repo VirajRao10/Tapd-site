@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tapd is a standalone Apple Watch controller for Anki Desktop.">
+    <meta name="description" content="Tapd is an iPhone and Apple Watch controller for Anki Desktop.">
     <meta property="og:title" content="Tapd">
     <meta property="og:description" content="Control Anki reviews from your Apple Watch over local Wi-Fi.">
     <meta property="og:image" content="./assets/tapd-icon.png">
@@ -29,11 +29,11 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Apple Watch controller for Anki Desktop</p>
+          <p class="eyebrow">iPhone setup + Apple Watch control</p>
           <h1>Tapd</h1>
           <p class="lede">
-            Review cards from your wrist with a local Wi-Fi bridge. No phone companion,
-            no cloud account, and no paid API dependency.
+            Review cards from your wrist with a local Wi-Fi bridge. The iPhone app handles setup,
+            the Watch handles reviewing, and nothing goes through a cloud account.
           </p>
           <div class="actions" aria-label="Primary actions">
             <a class="button primary" href="#how-to">Set up Tapd</a>
@@ -41,40 +41,16 @@
           </div>
         </div>
 
-        <div class="device-stage" aria-label="Tapd watch controller preview">
-          <div class="watch">
-            <div class="watch-screen">
-              <div class="watch-top">
-                <img src="./assets/tapd-icon.png" alt="" width="42" height="42">
-                <div>
-                  <strong>Tapd</strong>
-                  <span>Review Session</span>
-                </div>
-              </div>
-              <div class="status-row">
-                <span>Connected</span>
-                <span>Answer</span>
-              </div>
-              <div class="answer-grid">
-                <span class="again">Again</span>
-                <span class="hard">Hard</span>
-                <span class="good">Good</span>
-                <span class="easy">Easy</span>
-              </div>
-              <div class="mini-actions">
-                <span>Undo</span>
-                <span>Bury</span>
-                <span>Suspend</span>
-              </div>
-            </div>
-          </div>
+        <div class="device-stage" aria-label="Tapd iPhone and Apple Watch previews">
+          <img class="phone-preview" src="./assets/tapd-iphone-companion.png" alt="Tapd iPhone companion pairing screen">
+          <img class="watch-preview" src="./assets/tapd-watch-dashboard.png" alt="Tapd Apple Watch dashboard">
         </div>
       </section>
 
       <section class="band summary" aria-label="Tapd summary">
         <div>
           <strong>Local by design</strong>
-          <span>The Watch talks directly to Anki Desktop over your Wi-Fi network.</span>
+          <span>Tapd connects to Anki Desktop over your Wi-Fi network.</span>
         </div>
         <div>
           <strong>Fast review controls</strong>
@@ -82,7 +58,7 @@
         </div>
         <div>
           <strong>Pair once</strong>
-          <span>A short pairing code creates a bearer token stored on your Watch and in Anki.</span>
+          <span>Type the pairing code on iPhone, send it to Watch, and keep reviewing from your wrist.</span>
         </div>
       </section>
 
@@ -109,15 +85,15 @@
           <li>
             <span>3</span>
             <div>
-              <h3>Pair from Apple Watch</h3>
-              <p>Open Tapd on the Watch, enter the IP address, port, pairing code, and device name, then tap Pair.</p>
+              <h3>Send details from iPhone</h3>
+              <p>Open Tapd on iPhone, enter the IP address, port, pairing code, and device name, then tap Send to Watch.</p>
             </div>
           </li>
           <li>
             <span>4</span>
             <div>
               <h3>Start reviewing</h3>
-              <p>Open a review session in Anki, choose a Tapd mode on the Watch, and control the reviewer from your wrist.</p>
+              <p>Open Tapd on Apple Watch, finish pairing if prompted, choose a mode, and control the reviewer from your wrist.</p>
             </div>
           </li>
         </ol>
@@ -155,14 +131,14 @@
       <section id="install" class="section install">
         <div class="install-copy">
           <p class="eyebrow">Install</p>
-          <h2>Get Tapd on Apple Watch and AnkiWeb</h2>
+          <h2>Get Tapd on iPhone, Apple Watch, and AnkiWeb</h2>
           <p>
-            Tapd requires the watchOS app and the Tapd Anki add-on. Install the Watch app from the App Store,
-            then install the Tapd add-on from AnkiWeb so Anki Desktop can accept local commands from your Watch.
+            Tapd includes an iPhone setup app and an Apple Watch controller. Install Tapd from the App Store,
+            then install the Tapd add-on from AnkiWeb so Anki Desktop can accept local commands from your devices.
           </p>
         </div>
         <div class="command-list" aria-label="Installation requirements">
-          <span>Watch app: App Store</span>
+          <span>iPhone + Watch app: App Store</span>
           <span>Anki add-on: AnkiWeb</span>
           <span>Connection: same local Wi-Fi</span>
         </div>
