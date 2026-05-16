@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tapd is a standalone Apple Watch controller for Anki Desktop.">
+    <meta property="og:title" content="Tapd">
+    <meta property="og:description" content="Control Anki reviews from your Apple Watch over local Wi-Fi.">
+    <meta property="og:image" content="./assets/tapd-icon.png">
+    <title>Tapd - Anki on Apple Watch</title>
+    <link rel="icon" href="./assets/tapd-icon.png">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tapd home">
+        <img src="./assets/tapd-icon.png" alt="" width="36" height="36">
+        <span>Tapd</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how-to">How To</a>
+        <a href="#modes">Modes</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Apple Watch controller for Anki Desktop</p>
+          <h1>Tapd</h1>
+          <p class="lede">
+            Review cards from your wrist with a local Wi-Fi bridge. No phone companion,
+            no cloud account, and no paid API dependency.
+          </p>
+          <div class="actions" aria-label="Primary actions">
+            <a class="button primary" href="#how-to">Set up Tapd</a>
+            <a class="button secondary" href="./support.html">Get support</a>
+          </div>
+        </div>
+
+        <div class="device-stage" aria-label="Tapd watch controller preview">
+          <div class="watch">
+            <div class="watch-screen">
+              <div class="watch-top">
+                <img src="./assets/tapd-icon.png" alt="" width="42" height="42">
+                <div>
+                  <strong>Tapd</strong>
+                  <span>Review Session</span>
+                </div>
+              </div>
+              <div class="status-row">
+                <span>Connected</span>
+                <span>Answer</span>
+              </div>
+              <div class="answer-grid">
+                <span class="again">Again</span>
+                <span class="hard">Hard</span>
+                <span class="good">Good</span>
+                <span class="easy">Easy</span>
+              </div>
+              <div class="mini-actions">
+                <span>Undo</span>
+                <span>Bury</span>
+                <span>Suspend</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band summary" aria-label="Tapd summary">
+        <div>
+          <strong>Local by design</strong>
+          <span>The Watch talks directly to Anki Desktop over your Wi-Fi network.</span>
+        </div>
+        <div>
+          <strong>Fast review controls</strong>
+          <span>Show answers, grade cards, undo, bury, and suspend without touching the keyboard.</span>
+        </div>
+        <div>
+          <strong>Pair once</strong>
+          <span>A short pairing code creates a bearer token stored on your Watch and in Anki.</span>
+        </div>
+      </section>
+
+      <section id="how-to" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">How to use it</p>
+          <h2>Pair Anki and your Watch</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <div>
+              <h3>Install the Anki add-on</h3>
+              <p>Install the Tapd add-on from AnkiWeb, then restart Anki Desktop.</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <h3>Open the controller window</h3>
+              <p>In Anki, choose Tools -> Tapd Watch Controller. The add-on shows your local IP, port, and a 6-digit pairing code.</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <h3>Pair from Apple Watch</h3>
+              <p>Open Tapd on the Watch, enter the IP address, port, pairing code, and device name, then tap Pair.</p>
+            </div>
+          </li>
+          <li>
+            <span>4</span>
+            <div>
+              <h3>Start reviewing</h3>
+              <p>Open a review session in Anki, choose a Tapd mode on the Watch, and control the reviewer from your wrist.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="modes" class="section modes">
+        <div class="section-heading">
+          <p class="eyebrow">Controller modes</p>
+          <h2>Choose the control style that fits the session</h2>
+        </div>
+        <div class="mode-grid">
+          <article>
+            <h3>Button Mode</h3>
+            <p>Full controls for Show Answer, Again, Hard, Good, Easy, undo, bury, and suspend.</p>
+          </article>
+          <article>
+            <h3>Minimal Mode</h3>
+            <p>Tap for the primary action, long press for Again, and swipe for Hard or Easy.</p>
+          </article>
+          <article>
+            <h3>Crown Mode</h3>
+            <p>Rotate the Digital Crown to pick an answer ease, then tap to submit.</p>
+          </article>
+          <article>
+            <h3>Double Tap Mode</h3>
+            <p>Uses the watchOS primary hand gesture for show-answer and Good, with fallback buttons.</p>
+          </article>
+          <article>
+            <h3>Gesture Mode</h3>
+            <p>Shake, flick, or twist your wrist with sensitivity and cooldown controls.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="install" class="section install">
+        <div class="install-copy">
+          <p class="eyebrow">Install</p>
+          <h2>Get Tapd on Apple Watch and AnkiWeb</h2>
+          <p>
+            Tapd requires the watchOS app and the Tapd Anki add-on. Install the Watch app from the App Store,
+            then install the Tapd add-on from AnkiWeb so Anki Desktop can accept local commands from your Watch.
+          </p>
+        </div>
+        <div class="command-list" aria-label="Installation requirements">
+          <span>Watch app: App Store</span>
+          <span>Anki add-on: AnkiWeb</span>
+          <span>Connection: same local Wi-Fi</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Tapd runs locally on your network.</span>
+      <span class="footer-links">
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="#top">Back to top</a>
+      </span>
+    </footer>
+  </body>
+</html>
