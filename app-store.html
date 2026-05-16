@@ -36,11 +36,13 @@
           <dt>Subtitle</dt>
           <dd>Flashcard Watch Remote</dd>
           <dt>Primary Bundle ID</dt>
-          <dd>com.tapd.ios</dd>
+          <dd>com.virajrao.tapd</dd>
           <dt>Watch Bundle ID</dt>
-          <dd>com.tapd.ios.watch</dd>
+          <dd>com.virajrao.tapd.watchkitapp</dd>
           <dt>Category</dt>
           <dd>Productivity</dd>
+          <dt>App Store Connect Platform</dt>
+          <dd>iOS. Add the Apple Watch screenshots in the Apple Watch tab for the same app record.</dd>
           <dt>Promotional Text</dt>
           <dd>Set up Anki pairing on iPhone, then control Anki Desktop reviews from Apple Watch over local Wi-Fi.</dd>
           <dt>Description</dt>
@@ -75,6 +77,18 @@
           To test, install the Tapd add-on from AnkiWeb, restart Anki, open Tools -> Tapd Watch Controller, start a
           review session, enter the displayed local IP address, port, and 6-digit pairing code in the iPhone app, then
           tap Send to Watch and open Tapd on Apple Watch.
+        </p>
+        <p>
+          Archive the Tapd iOS scheme for App Store Connect. The embedded Watch app supports running without the iPhone
+          app installed, so Apple Watch users can install and launch it from the App Store on Apple Watch.
+        </p>
+        <p>
+          Use the iOS bundle ID, com.virajrao.tapd, when creating the App Store Connect app record. The watchOS bundle
+          ID is embedded in that same upload.
+        </p>
+        <p>
+          Archive check: the archive should contain one top-level app, Tapd.app, with the Watch app embedded at
+          Tapd.app/Watch/Tapd Watch App.app.
         </p>
       </section>
     </main>
